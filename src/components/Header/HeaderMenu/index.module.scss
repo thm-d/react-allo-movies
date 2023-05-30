@@ -1,0 +1,29 @@
+.MenuContainer {
+  position: absolute;
+  top: 68px;
+  right: 10px;
+  width: 200px;
+  border-radius: 0.25rem;
+  background-color: var(--gray-dark);
+
+  a:first-child {
+    margin-bottom: 5px;
+  }
+
+  a {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+    &:hover {
+      background-color: white;
+      color: var(--gray-dark);
+      font-weight: 500;
+    }
+  }
+
+}

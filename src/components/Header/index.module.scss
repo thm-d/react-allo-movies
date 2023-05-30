@@ -1,0 +1,22 @@
+@use 'assets/styles/mixins' as mixin;
+
+
+.headerList {
+  @include mixin.md-lt {
+    display: none;
+  }
+}
+
+.headerMdLt {
+  display: none !important;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include mixin.md-lt {
+    display: block !important;
+  }
+}
