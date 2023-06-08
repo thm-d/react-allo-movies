@@ -9,7 +9,6 @@ import style from "./index.module.scss";
 export const Header = () => {
   const dispatch = useDispatch();
   const [ showMenu, setShowMenu ] = useState(false);
-  console.log(showMenu);
 
   return (
     <header className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">

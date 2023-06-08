@@ -1,0 +1,9 @@
+@use 'assets/styles/mixins' as mixins;
+
+.container {
+  margin-top: 2rem;
+
+  @include mixins.xs {
+    width: 100% !important;
+  }
+}

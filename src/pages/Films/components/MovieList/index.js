@@ -10,7 +10,7 @@ export const MovieList = (props) => {
   return (
     <div className={ `w-75 d-flex flex-row flex-wrap justify-content-center ${style.container}` }>
       {movies?.map((m, i) => (
-        <MovieElement key={crypto.randomUUID()}
+        <MovieElement key={Math.random()}
                       movie={m}
                       updateSelectedMovie={() => updateSelectedMovie(i)}
                       isFavori={favoris.includes(m.title)}

@@ -6,7 +6,7 @@ export const MovieElement = (props) => {
 
 
   return (
-    <div className={`border d-flex ${style.container}`} onClick={updateSelectedMovie}>
+    <div className={`d-flex bg-light border ${style.container}`} onClick={updateSelectedMovie}>
       <img width="185" alt="film visual"
            src={movie.img} />
       <div className="flex-fill d-flex flex-column p-3">

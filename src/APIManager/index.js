@@ -87,7 +87,6 @@ export class APIManager {
       });
       if (response.ok) {
         const data = await response.json();
-        console.log("DATA_DELETE", data);
         console.log("The movie has been removed from the favorites");
         return data;
       }
