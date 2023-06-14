@@ -11,15 +11,15 @@ const Films = () => {
 
   return (
     <>
-      <SearchBar searchMovies={searchMovies} />
+      <SearchBar searchMovies={ searchMovies }/>
       <div className="d-flex flex-row flex-fill pt-4 p-2">
-        <MovieList movies={movies}
-                   updateSelectedMovie={updateSelectedMovie}
-                   favoris={favoris.map(f => f.title)}
-                   removeFavori={removeFavori}
-                   addFavori={addFavori}
+        <MovieList movies={ movies }
+                   updateSelectedMovie={ updateSelectedMovie }
+                   favoris={ favoris.map(f => f.details ) }
+                   removeFavori={ removeFavori }
+                   addFavori={ addFavori }
         />
-        <MovieDetails />
+        <MovieDetails/>
       </div>
     </>
   );
