@@ -12,10 +12,15 @@ export const Header = () => {
 
   return (
     <header className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
-      <Link to="/" className="navbar-brand" onClick={ () => {
-        dispatch(fetchMovies());
-      } }
-      >AlloMovies</Link>
+      <div className={ `${ style.gitLogo }` }>
+          <Link to="/" className="navbar-brand mr-0" onClick={ () => {
+            dispatch(fetchMovies());
+          } }
+          >AlloMovies</Link>
+          <a href="https://github.com/thm-d/react-allo-movies" className="nav-link" target="_blank"><i
+            className="fa-brands fa-github fa-xl"
+          ></i></a>
+      </div>
       <div className={ `collapse navbar-collapse ${ style.headerList }` }>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item li">

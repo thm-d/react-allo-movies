@@ -1,5 +1,16 @@
 @use 'assets/styles/mixins' as mixin;
 
+.gitLogo {
+  display: flex;
+
+  a {
+    color: white;
+    text-decoration: none;
+    :hover {
+      opacity: 0.8;
+    }
+  }
+}
 
 .headerList {
   @include mixin.md-lt {

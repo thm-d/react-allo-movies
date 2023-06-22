@@ -15,7 +15,7 @@ This project gives you access to a database containing a host of films that you 
   
 - Sass
 
-# Getting Started with Geolocation Application
+# Getting Started with Allo Movies
 
 - Click on a film's card to view its details, which will be displayed on the right.
 - You can search for a film or a selection of films using the search bar.
